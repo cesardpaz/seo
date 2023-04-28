@@ -8,7 +8,7 @@ import Team from '../components/team/Team';
 import News from '../components/news/News';
 import Testimonials from '../components/testimonials/Testimonials';
 import Contact from '../components/contact/Contact';
-
+import Clients from '../components/clients/Clients';
 import Preloader from '../components/Preloader';
 
 
@@ -61,49 +61,7 @@ export default function Home() {
 
             <Testimonials />
 
-            <div className="client mid-title fades">
-                <div className="container">
-
-                    <div className="partner">
-                        <div className="owl-carousel owl-theme">
-                            <div className="item-partner">
-                                <div className="row">
-                                    <div className="col-lg-12">
-                                        <img src="assets/img/partner/light/client-1.png" alt="1" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="item-partner">
-                                <div className="row">
-                                    <div className="col-lg-12">
-                                        <img src="assets/img/partner/light/client-2.png" alt="1" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="item-partner">
-                                <div className="row">
-                                    <div className="col-lg-12">
-                                        <img src="assets/img/partner/light/client-3.png" alt="1" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="item-partner">
-                                <div className="row">
-                                    <div className="col-lg-12">
-                                        <img src="assets/img/partner/light/client-4.png" alt="1" />
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <Clients />
 
             <div className="between">
                 <div className="line-between"></div>
