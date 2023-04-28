@@ -962,9 +962,7 @@ span.number {
    ========================================================================== */
 
 .about-overlay {
-    background-image: -moz-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 69, 69) 100%);
-    background-image: -webkit-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 69, 69) 100%);
-    background-image: -ms-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 69, 69) 100%);
+    background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 69, 69) 100%);
     opacity: .5;
     height: 100%;
     width: 100%;
