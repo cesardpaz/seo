@@ -1,8 +1,16 @@
+import { useState } from 'react';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import Image from 'next/image';
 
 const Header = () => {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleToggleClick = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     const logoRef = useRef(null);
     const toggleBtnRef = useRef(null);
 
@@ -71,7 +79,7 @@ const Header = () => {
                     </a>
 
                 </div>
-                <div ref={toggleBtnRef} className="toggle-btn">
+                <div ref={toggleBtnRef} className="toggle-btn" onClick={handleToggleClick}>
                     <div className="burger-menu">
                         <span className="one"></span>
                         <span className="two"></span>
@@ -82,7 +90,13 @@ const Header = () => {
                 <div className="bg-nav"></div>
 
                 <div className="manu-container">
-                    <div className="menu hidden">
+                    <div
+                        className="menu"
+                        style={{
+                        opacity: menuOpen ? 1 : 0,
+                        visibility: menuOpen ? 'inherit' : 'hidden',
+                        }}
+                    >
                         <div className="data">
                             <div className="container">
                                 <div className="row">
