@@ -1,4 +1,30 @@
+import { useRef } from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const Testimonials = () => {
+
+    const sliderRef = useRef(null);
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+
     return (
         <section id="client" className="testimonial fades" data-scroll-index="6">
             <div className="container">
@@ -17,9 +43,8 @@ const Testimonials = () => {
                             <i className="fa fa-quote-right" aria-hidden="true"></i>
                         </div>
                         <div className="testimonial">
-                            <div className="owl-carousel owl-theme">
+                            <Slider ref={sliderRef} {...settings}>
                                 <div className="item-testi-slide">
-
                                     <div className="testimonial-item text-center">
                                         <p>We have partnered with 8chDesign GmbH since 2011, when they first designed our
                                             corporate stationery. Their work ethic is very professional, reliable, and
@@ -29,9 +54,19 @@ const Testimonials = () => {
                                             <p className="author-text">Nattasha, Aloka CEO</p>
                                         </div>
                                     </div>
-
                                 </div>
-                            </div>
+                                <div className="item-testi-slide">
+                                    <div className="testimonial-item text-center">
+                                        <p>We have partnered with 8chDesign GmbH since 2011, when they first designed our
+                                            corporate stationery. Their work ethic is very professional, reliable, and
+                                            timely. 8chDesign GmbH always goes the extra mile and thus comes highly
+                                            recommended.</p>
+                                        <div className="author">
+                                            <p className="author-text">Nattasha, Aloka CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Slider>
                         </div>
                     </div>
                 </div>
