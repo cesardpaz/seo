@@ -1,46 +1,10 @@
 import Image from "next/image"
 
-import { gsap } from 'gsap';
-import ScrollMagic from 'scrollmagic';
-import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap';
-
-gsap.registerPlugin(ScrollMagicPluginGsap);
-
 import Service_1 from "../../public/img/service/1.png"
 import Service_2 from "../../public/img/service/2.png"
 import Service_3 from "../../public/img/service/3.png"
 
 const Services = () => {
-
-    const servicesRef = useRef(null);
-    const titleRef = useRef(null);
-    const itemsRef = useRef([]);
-    const iconsRef = useRef([]);
-    const textsRef = useRef([]);
-
-    useEffect(() => {
-        if (servicesRef.current) {
-        const controllerService = new ScrollMagic.Controller();
-
-        const animateService = gsap.timeline({ paused: false, repeat: false })
-            .from(titleRef.current, { autoAlpha: 0, y: 100, ease: 'power4.out', duration: 0.3 });
-
-        itemsRef.current.forEach((item, index) => {
-            animateService
-            .from(item, { autoAlpha: 0, y: 100, ease: 'power4.out', duration: 0.3 }, 0.3 * index)
-            .from(iconsRef.current[index], { autoAlpha: 0, y: 100, ease: 'power4.out', duration: 0.3 }, 0.3 * index)
-            .from(textsRef.current[index], { x: -10, autoAlpha: 0, ease: 'power4.out', duration: 0.3 }, 0.3 * index);
-        });
-
-        const serviceScene = new ScrollMagic.Scene({
-            triggerElement: servicesRef.current,
-            offset: -150,
-            reverse: false,
-        })
-            .setTween(animateService)
-            .addTo(controllerService);
-        }
-    }, []);
 
     return (
         <section id="service" className="service parallax-scrl" data-scroll-index="2">

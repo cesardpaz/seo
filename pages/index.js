@@ -1,9 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { useEffect } from 'react';
-import { gsap } from 'gsap';
 import Header from '../components/header/Header';
-import Hero from '../components/hero/hero';
+import Hero from '../components/hero/Hero';
 import About from '../components/about/About';
 import Services from '../components/services/Services';
 import Project from '../components/project/Project';
