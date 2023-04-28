@@ -1493,3 +1493,21 @@ a.phone {
 .mt100 {
     margin-top: 100px;
 }
+
+.slick-track {
+    display: flex!important;
+    gap: 10px;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.team-item-wrapper {
+    position: relative;
+}
+
+.news-item {
+    position: relative;
+}

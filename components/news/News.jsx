@@ -1,11 +1,41 @@
 import Image from "next/image"
 
+import { useRef } from 'react';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import News1 from "../../public/img/news/1.jpg"
 import News2 from "../../public/img/news/2.jpg"
 import News3 from "../../public/img/news/3.jpg"
 import News4 from "../../public/img/news/4.jpg"
 
+import ArrowLight from "../../public/img/arrow-light.png"
+import ArrowLightR from "../../public/img/arrow-light-R.png"
+
 const News = () => {
+
+    const sliderRef = useRef(null);
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+
+
     return (
         <section id="news" className="news parallax-scrl" data-scroll-index="5">
             <div className="left-bg"></div>
@@ -22,7 +52,8 @@ const News = () => {
                     </div>
                     <div className="col-lg-12 mt-50">
                         <div className="news-slider">
-                            <div className="owl-carousel owl-theme">
+                            <Slider ref={sliderRef} {...settings}>
+
                                 <div className="news-item text-center">
 
                                     <div className="news-img">
@@ -71,12 +102,12 @@ const News = () => {
                                     </div>
 
                                 </div>
-                            </div>
+                            </Slider>
                         </div>
                         <div className="mt-40 text-center">
-                            <ul className="arrows">
-                                <li className="arrow-left -news"><img src="assets/img/arrow-light.png" alt="" /></li>
-                                <li className="arrow-right -news"><img src="assets/img/arrow-light-R.png" alt="" /></li>
+                             <ul className="arrows">
+                                <li className="arrow-left -team" onClick={() => sliderRef.current.slickPrev()}><Image src={ArrowLight} alt="arrow" /></li>
+                                <li className="arrow-right -team" onClick={() => sliderRef.current.slickNext()}><Image src={ArrowLightR} alt="arrow" /></li>
                             </ul>
                         </div>
                     </div>
