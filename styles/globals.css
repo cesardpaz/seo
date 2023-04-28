@@ -192,8 +192,7 @@ a:hover {
 }
 
 .line-between {
-    /* height: 100px; */
-    height: 0;
+    height: 100px;
     width: 1px;
     position: absolute;
     display: block;
@@ -416,11 +415,10 @@ body {
     position: absolute;
     width: 60%;
     height: calc(100% + 200px);
-    background: #222222;
+    /* background: #222222; */
     opacity: 1;
     right: 0;
     top: 0;
-    margin-top: -100px;
     display: block;
     z-index: -3;
 }
@@ -1486,6 +1484,10 @@ a.phone {
 }
 
 
+.hidden {
+    display: none;
+}
 
-
-
+.mt100 {
+    margin-top: 100px;
+}

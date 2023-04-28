@@ -82,7 +82,7 @@ const Header = () => {
                 <div className="bg-nav"></div>
 
                 <div className="manu-container">
-                    <div className="menu">
+                    <div className="menu hidden">
                         <div className="data">
                             <div className="container">
                                 <div className="row">

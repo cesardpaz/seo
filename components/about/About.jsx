@@ -25,7 +25,7 @@ const About = () => {
     }, []);
 
     return (
-        <section id="about" className="about parallax-scrl" data-scroll-index="1">
+        <section id="about" className="about parallax-scrl mt100" data-scroll-index="1">
             <div className="right-bg"></div>
             <div className="container">
 
