@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "gsap": "^3.11.5",
     "next": "13.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugin-gsap": "^1.0.4"
   },
   "devDependencies": {
     "eslint": "8.37.0",
