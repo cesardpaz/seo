@@ -5,9 +5,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Team1 from "../../public/img/team/1.png"
-import Team2 from "../../public/img/team/2.png"
-import Team3 from "../../public/img/team/3.png"
+import Team1 from "../../public/img/team/francisco.png"
+import Team2 from "../../public/img/team/team2.png"
+import Team3 from "../../public/img/team/team3.png"
+import Team4 from "../../public/img/team/team4.png"
+import Team5 from "../../public/img/team/team5.png"
+import Team6 from "../../public/img/team/team6.png"
 
 
 import ArrowLight from "../../public/img/arrow-light.png"
@@ -59,8 +62,8 @@ const Team = () => {
                                             <Image src={Team1} alt="" />
                                         </div>
                                         <div className="team-text">
-                                            <h3>Nicky Astria</h3>
-                                            <p>Web Developer</p>
+                                            <h3>Francisco Novoa</h3>
+                                            <p>Agencia SEO</p>
                                         </div>
                                     </div>
                                 </div>
@@ -71,7 +74,7 @@ const Team = () => {
                                         </div>
                                         <div className="team-text">
                                             <h3>Ivan Seventeen</h3>
-                                            <p>Graphic Designer</p>
+                                            <p>Desarrollo web corporativo</p>
                                         </div>
                                     </div>
                                 </div>
@@ -82,7 +85,40 @@ const Team = () => {
                                         </div>
                                         <div className="team-text">
                                             <h3>Nicky Astria</h3>
-                                            <p>Web Developer</p>
+                                            <p>Copy writer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="team-item-wrapper">
+                                    <div className="team-item text-center">
+                                        <div className="team-img">
+                                            <Image src={Team4} alt="" />
+                                        </div>
+                                        <div className="team-text">
+                                            <h3>Nicky Astria</h3>
+                                            <p>Desarrollo web profesional</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="team-item-wrapper">
+                                    <div className="team-item text-center">
+                                        <div className="team-img">
+                                            <Image src={Team5} alt="" />
+                                        </div>
+                                        <div className="team-text">
+                                            <h3>Nicky Astria</h3>
+                                            <p>Experto en branding personal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="team-item-wrapper">
+                                    <div className="team-item text-center">
+                                        <div className="team-img">
+                                            <Image src={Team6} alt="" />
+                                        </div>
+                                        <div className="team-text">
+                                            <h3>Nicky Astria</h3>
+                                            <p>Experto en ciberseguridad</p>
                                         </div>
                                     </div>
                                 </div>

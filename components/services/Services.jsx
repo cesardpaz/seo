@@ -1,8 +1,8 @@
 import Image from "next/image"
 
-import Service_1 from "../../public/img/service/1.png"
-import Service_2 from "../../public/img/service/2.png"
-import Service_3 from "../../public/img/service/3.png"
+import Service_1 from "../../public/img/service/ser1.png"
+import Service_2 from "../../public/img/service/ser2.png"
+import Service_3 from "../../public/img/service/ser3.png"
 
 const Services = () => {
 

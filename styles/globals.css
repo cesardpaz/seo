@@ -532,8 +532,9 @@ body {
     width: 50%;
     right: 0;
     position: absolute;
-    background: url('img/bg-hero.png') no-repeat center center;
-    background-size: cover;
+    background: url('img/hdleon.png') no-repeat center center;
+    background-size: contain;
+    background-position: bottom;
 }
 
 .square-overlay {

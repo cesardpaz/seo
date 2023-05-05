@@ -10,8 +10,6 @@ const About = () => {
 
             const controllerAbout = new ScrollMagic.Controller();
 
-            // Aquí va el resto de tu código de animación
-
             const animateAbout = new gsap.timeline();
 
             animateAbout
@@ -19,8 +17,6 @@ const About = () => {
                 .fromTo('.about-img', { autoAlpha: 0, x: -100 }, { autoAlpha: 1, x: 0, duration: 0.3, ease: 'power4.out' })
                 .fromTo('.title', { autoAlpha: 0, y: 100 }, { autoAlpha: 1, y: 0, duration: 0.3, ease: 'power4.out' })
                 .fromTo('.about-text .about-inner', { autoAlpha: 0, y: 100 }, { autoAlpha: 1, y: 0, duration: 0.3, ease: 'power4.out' });
-
-            // ...
         }
     }, []);
 
@@ -53,7 +49,7 @@ const About = () => {
                     <div className="col-lg-6 order-lg-1">
                         <div className="about-img line-img">
                             <div className="about-overlay"></div>
-                            <img className="img-fluid" src="/img/about/2.jpg" alt="logo" fill="responsive" />
+                            <img className="img-fluid" src="/img/about/about.jpg" alt="logo" fill="responsive" />
                         </div>
 
                     </div>
