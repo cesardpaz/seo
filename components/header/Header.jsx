@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import Image from 'next/image';
+import Link from 'next/link';
+
+import Logo from '../../public/img/logo2.png';
 
 const Header = () => {
 
@@ -74,9 +77,13 @@ const Header = () => {
         <header>
             <nav>
                 <div ref={logoRef} className="logo">
-                    <a href="index.html">
-                        <Image src="/img/logo.png" alt="logo" width={47} height={50} />
-                    </a>
+                    <Link href="/">
+                        <Image
+                            className='logo-img'
+                            src={Logo}
+                            alt="Logo"
+                         />
+                    </Link>
 
                 </div>
                 <div ref={toggleBtnRef} className="toggle-btn" onClick={handleToggleClick}>
@@ -103,14 +110,14 @@ const Header = () => {
                                     <div className="col-lg-6">
                                         <div className="links text-center text-lg-left">
                                             <ul>
-                                                <li><a className="menu-link active" href="#" data-scroll-nav="0">Home</a></li>
-                                                <li><a className="menu-link" href="#" data-scroll-nav="1">About</a></li>
-                                                <li><a className="menu-link" href="#" data-scroll-nav="2">Services</a></li>
+                                                <li><a className="menu-link active" href="#" data-scroll-nav="0">Inicio</a></li>
+                                                <li><a className="menu-link" href="#" data-scroll-nav="1">Agencia</a></li>
+                                                <li><a className="menu-link" href="#" data-scroll-nav="2">Servicios</a></li>
                                                 <li><a className="menu-link" href="#" data-scroll-nav="3">Portfolio</a></li>
-                                                <li><a className="menu-link" href="#" data-scroll-nav="4">Team</a></li>
-                                                <li><a className="menu-link" href="#" data-scroll-nav="5">News</a></li>
-                                                <li><a className="menu-link" href="#" data-scroll-nav="6">Client</a></li>
-                                                <li><a className="menu-link" href="#" data-scroll-nav="7">Contact</a></li>
+                                                <li><a className="menu-link" href="#" data-scroll-nav="4">Equipo</a></li>
+                                                <li><a className="menu-link" href="#" data-scroll-nav="5">Blog</a></li>
+                                                <li><a className="menu-link" href="#" data-scroll-nav="6">Clientes</a></li>
+                                                <li><a className="menu-link" href="#" data-scroll-nav="7">Contacto</a></li>
                                             </ul>
                                         </div>
 

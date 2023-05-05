@@ -1532,3 +1532,8 @@ a.phone {
   .item-partner > div > div {
     padding:  0 40px;
   }
+
+  .logo-img {
+    max-width: 200px;
+    height: auto;
+  }
