@@ -1500,6 +1500,7 @@ a.phone {
 .slick-track {
     display: flex!important;
     gap: 10px;
+    align-items: center;
 }
 
 .slick-slide img {
@@ -1526,4 +1527,8 @@ a.phone {
     opacity: 1;
     visibility: visible;
 
+  }
+
+  .item-partner > div > div {
+    padding:  0 40px;
   }
