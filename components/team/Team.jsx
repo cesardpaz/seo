@@ -11,6 +11,9 @@ import Team3 from "../../public/img/team/team3.png"
 import Team4 from "../../public/img/team/team4.png"
 import Team5 from "../../public/img/team/team5.png"
 import Team6 from "../../public/img/team/team6.png"
+import Team7 from "../../public/img/team/team7.png"
+import Team8 from "../../public/img/team/team8.png"
+import Team9 from "../../public/img/team/team9.png"
 
 
 import ArrowLight from "../../public/img/arrow-light.png"
@@ -119,6 +122,39 @@ const Team = () => {
                                         <div className="team-text">
                                             <h3>Nicky Astria</h3>
                                             <p>Experto en ciberseguridad</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="team-item-wrapper">
+                                    <div className="team-item text-center">
+                                        <div className="team-img">
+                                            <Image src={Team7} alt="" />
+                                        </div>
+                                        <div className="team-text">
+                                            <h3>Nicky Astria</h3>
+                                            <p>Programador Web</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="team-item-wrapper">
+                                    <div className="team-item text-center">
+                                        <div className="team-img">
+                                            <Image src={Team8} alt="" />
+                                        </div>
+                                        <div className="team-text">
+                                            <h3>Nicky Astria</h3>
+                                            <p>Servicio SEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="team-item-wrapper">
+                                    <div className="team-item text-center">
+                                        <div className="team-img">
+                                            <Image src={Team9} alt="" />
+                                        </div>
+                                        <div className="team-text">
+                                            <h3>Nicky Astria</h3>
+                                            <p>Consultor estratégico</p>
                                         </div>
                                     </div>
                                 </div>
